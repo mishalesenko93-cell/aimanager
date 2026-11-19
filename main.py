@@ -24,7 +24,7 @@ GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.0-flash")
 
 app = FastAPI(title="Aurex AI Manager")
 scheduler = AsyncIOScheduler(timezone=TIMEZONE)
- TG_API = f"https://api.telegram.org/bot{BOT_TOKEN}"
+TG_API = f"https://api.telegram.org/bot{BOT_TOKEN}"
 
 # ---- Хранилище в памяти (без базы данных) ----
 # Сбрасывается при перезапуске сервиса.
